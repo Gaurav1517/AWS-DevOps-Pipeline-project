@@ -7,7 +7,6 @@ clone url: git clone https://github.com/Gaurav1517/AWS-DevOps-Pipeline-project.g
 cd AWS-DevOps-Pipeline-project/
 
 
-
 ### Install the CodeDeploy Agent
 Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-linux.html
 
