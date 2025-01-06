@@ -14,9 +14,10 @@ phases:
       - cp index.html /usr/share/nginx/html/index.html
   post_build:
     commands:
-      - echo "Start & Enable NGINX"
-      - sudo systemctl start nginx
-      - sudo systemctl enable nginx
+      - echo "Starting NGINX without systemctl"
+      - sudo nginx -c /etc/nginx/nginx.conf  # Start NGINX manually
+      - sudo nginx -t  # Test the NGINX configuration
+      - sudo ps aux | grep nginx  # Confirm NGINX is running
 
 artifacts:
   files:
