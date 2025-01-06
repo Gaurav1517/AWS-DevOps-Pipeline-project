@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo service nginx start
+sudo systemctl start nginx
+sudo systemctl enable nginx 

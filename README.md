@@ -29,3 +29,8 @@ systemctl start codedeploy-agent
 systemctl enable codedeploy-agent
 # To check that the service is running, run the following command:
 systemctl status codedeploy-agent
+
+
+Restart after attaching IAM Role
+systemctl restart  codedeploy-agent.service
+systemctl status codedeploy-agent.service
