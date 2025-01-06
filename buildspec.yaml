@@ -1,0 +1,24 @@
+---
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Install NGINX"
+      - sudo yum update -y
+      - sudo yum install nginx -y
+  build:
+    commands:
+      - echo "Build started on $(date)"
+      - echo "Building the code"
+      - cp index.html /usr/share/nginx/html/index.html
+  post_build:
+    commands:
+      - echo "Start & Enable NGINX"
+      - sudo systemctl start nginx
+      - sudo systemctl enable nginx
+
+artifacts:
+  files:
+    - index.html
+  discard-paths: yes

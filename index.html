@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS CodePipeline Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--color-text-body-default-bvmavx, #16191f);;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 2em;
+  background: url('../images/aws-banner.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+.hero .btn {
+  background-color: #ff9900;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.blog {
+  padding: 2em;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.step-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  width: 300px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.step-card h3 {
+  color: #232f3e;
+}
+
+.contact {
+  padding: 2em;
+  background-color: #232f3e;
+  color: white;
+  text-align: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 80%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact .btn {
+  background-color: #ff9900;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+h1{
+    color: #232f3e;
+}
+p{
+    color: #232f3e;
+}
+
+/* Navbar and Logo Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #232f3e;
+}
+
+.navbar .logo {
+  height: 40px; /* Adjust the height to control the logo size */
+  width: auto;  /* Maintains aspect ratio */
+  margin-right: 1em; /* Adds spacing between the logo and the navigation links */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #ff9900; /* Highlight effect on hover */
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <img src="https://docs.aws.amazon.com/assets/r/images/aws_logo_dark.png" alt="Logo" class="logo">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to AWS CodePipeline Blog</h1>
+    <p>Learn how to automate your development workflow with AWS.</p>
+    <a href="#blog" class="btn">Read the Blog</a>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <h2>AWS CodePipeline Steps</h2>
+    <div class="steps">
+      <div class="step-card">
+        <h3>1. Code Commit</h3>
+        <p>Push your source code to a Git repository such as AWS CodeCommit, GitHub, or Bitbucket.</p>
+      </div>
+      <div class="step-card">
+        <h3>2. Build</h3>
+        <p>Use AWS CodeBuild to compile your code, run tests, and prepare build artifacts.</p>
+      </div>
+      <div class="step-card">
+        <h3>3. Create Artifacts</h3>
+        <p>Package your build output into deployable artifacts, such as .zip files or containers.</p>
+      </div>
+      <div class="step-card">
+        <h3>4. Pipeline</h3>
+        <p>Orchestrate your build and deployment process with AWS CodePipeline.</p>
+      </div>
+      <div class="step-card">
+        <h3>5. Deploy</h3>
+        <p>Deploy your application to AWS services like EC2, Lambda, or S3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p style="color: #ffffff">© 2025 AWS Blog | All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thank you for contacting us! We'll get back to you shortly.");
+    form.reset();
+  });
+});
+
+  </script>
+</body>
+</html>
