@@ -2,14 +2,16 @@
 
 AWS DevOps Project using Git, AWS Code Build, Code Artifacts,  Code Pipeline, Code Deploy , IAM (User,Role,Policy), S3bucket(Artifacts), EC2(Deploy)
 
-Clone github repository
+### Clone github repository
 clone url: git clone https://github.com/Gaurav1517/AWS-DevOps-Pipeline-project.git
 cd AWS-DevOps-Pipeline-project/
 
 
 
-Install the CodeDeploy Agent
+### Install the CodeDeploy Agent
 Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-linux.html
+
+```bash
 # update the system
 sudo yum update
 # Install agent
@@ -29,8 +31,10 @@ systemctl start codedeploy-agent
 systemctl enable codedeploy-agent
 # To check that the service is running, run the following command:
 systemctl status codedeploy-agent
+```
 
-
-Restart after attaching IAM Role
+### Restart after attaching IAM Role
+```bash
 systemctl restart  codedeploy-agent.service
 systemctl status codedeploy-agent.service
+```
