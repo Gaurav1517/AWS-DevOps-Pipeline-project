@@ -282,4 +282,9 @@ Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-op
 Again, the developer releases version v2.0. Upon committing the changes to GitHub, the pipeline is automatically triggered, and version 2.0 is successfully deployed.
 
 ![final-version2-output](Snap/final-version2-output.png)
----
+
+
+### 🚀 **Deployment Successful!** 🎉
+
+Version 2.0 is now live, and it's smoother than your favorite coffee! ☕️
+
