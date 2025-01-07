@@ -1,4 +1,6 @@
 #!/bin/bash
 
-sudo systemctl start nginx
-sudo systemctl enable nginx 
+# service start & enable ngnix for yum based linux
+service nginx start
+chkconfig nginx on
+
