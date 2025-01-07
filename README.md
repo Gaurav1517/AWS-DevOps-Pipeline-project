@@ -1,4 +1,6 @@
-# <a href="https://aws.amazon.com"><img src="https://www.svgrepo.com/show/376356/aws.svg" alt="AWS" width="50"></a>![project-arhitecture](Snap/project-arhitecture.png)
+# <a href="https://aws.amazon.com"><img src="https://www.svgrepo.com/show/376356/aws.svg" alt="AWS" width="50"></a>AWS-DevOps-Pipeline-project
+
+![project-arhitecture](Snap/project-arhitecture.png)
 
 ## Tools used: 
 
@@ -38,7 +40,6 @@
 <a href="https://icon.icepanel.io/AWS/svg/Compute/EC2.svg">
   <img src="https://icon.icepanel.io/AWS/svg/Compute/EC2.svg" alt="EC2" width="80">
 </a>
-
 
 
 ### Project Overview
