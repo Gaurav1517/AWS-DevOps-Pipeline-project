@@ -66,18 +66,22 @@ This project serves as an excellent template for organizations and developers lo
 - Attach the policy **AWSCodeDeployRole**.  
 - Name the role `CodeDeployServiceRole` and create it.
 
----
 ![IAMCodeDeploy.png](Snap/IAMCodeDeploy.png)
+---
+
 
 ### 2. **Launch an EC2 Instance**  
 1. Go to **EC2 Console** → **Launch Instance**.  
 2. Choose an **Amazon Linux 2** AMI.  
 3. Attach the IAM role `EC2CodeDeployRole`.  
 4. Use the following **User Data** script to install the CodeDeploy agent:
+
 ### Install the CodeDeploy Agent
 Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-linux.html
 
-    ```bash
+  To ensure the `bash` code does not appear as a block in the `README.md` file, simply remove the ```bash markers and keep the code as plain text. Here's how it should look:
+
+    ```
     #!/bin/bash
     # Update the system
     sudo yum update -y
@@ -94,6 +98,8 @@ Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-op
     # Check CodeDeploy agent status
     systemctl status codedeploy-agent
     ```
+
+
 ![ec2-snap](Snap/ec2-snap.png)
 ---
 
@@ -273,5 +279,8 @@ Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-op
 - Confirm that the application is deployed successfully.  
 
 ![codeDeploySnap](Snap/codeDeploySnap.png)
+
+Again, the developer releases version v2.0. Upon committing the changes to GitHub, the pipeline is automatically triggered, and version 2.0 is successfully deployed.
+
 ![final-version2-output](Snap/final-version2-output.png)
 ---
