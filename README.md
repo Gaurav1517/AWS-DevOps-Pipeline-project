@@ -3,41 +3,42 @@
 ## Tools used: 
 
 <a href="https://aws.amazon.com">
-  <img src="https://www.svgrepo.com/show/376356/aws.svg" alt="AWS" width="100">
+  <img src="https://www.svgrepo.com/show/376356/aws.svg" alt="AWS" width="80">
 </a>
 <a href="https://www.kernel.org">
-  <img src="https://www.svgrepo.com/show/354004/linux-tux.svg" alt="Linux" width="100">
+  <img src="https://www.svgrepo.com/show/354004/linux-tux.svg" alt="Linux" width="80">
 </a>
 <a href="https://git-scm.com">
-  <img src="https://www.svgrepo.com/show/452210/git.svg" alt="Git" width="100">
+  <img src="https://www.svgrepo.com/show/452210/git.svg" alt="Git" width="80">
 </a>
 <a href="https://github.com">
-  <img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="GitHub" width="100">
+  <img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="GitHub" width="80">
 </a>
 <a href="https://www.svgrepo.com/show/452129/vs-code.svg">
-  <img src="https://www.svgrepo.com/show/452129/vs-code.svg" alt="VS Code" width="100">
+  <img src="https://www.svgrepo.com/show/452129/vs-code.svg" alt="VS Code" width="80">
 </a>
 <a href="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeDeploy.svg">
-  <img src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeDeploy.svg" alt="CodeDeploy" width="100">
+  <img src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeDeploy.svg" alt="CodeDeploy" width="80">
 </a>
 <a href="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodePipeline.svg">
-  <img src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodePipeline.svg" alt="CodePipeline" width="100">
+  <img src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodePipeline.svg" alt="CodePipeline" width="80">
 </a>
 <a href="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeBuild.svg">
-  <img src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeBuild.svg" alt="CodeBuild" width="100">
+  <img src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeBuild.svg" alt="CodeBuild" width="80">
 </a>
 <a href="https://icon.icepanel.io/AWS/svg/Storage/Simple-Storage-Service.svg">
-  <img src="https://icon.icepanel.io/AWS/svg/Storage/Simple-Storage-Service.svg" alt="S3" width="100">
+  <img src="https://icon.icepanel.io/AWS/svg/Storage/Simple-Storage-Service.svg" alt="S3" width="80">
 </a>
 <a href="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeArtifact.svg">
-  <img src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeArtifact.svg" alt="CodeArtifact" width="100">
+  <img src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeArtifact.svg" alt="CodeArtifact" width="80">
 </a>
 <a href="https://icon.icepanel.io/AWS/svg/Security-Identity-Compliance/IAM-Identity-Center.svg">
-  <img src="https://icon.icepanel.io/AWS/svg/Security-Identity-Compliance/IAM-Identity-Center.svg" alt="IAM Identity Center" width="100">
+  <img src="https://icon.icepanel.io/AWS/svg/Security-Identity-Compliance/IAM-Identity-Center.svg" alt="IAM Identity Center" width="80">
 </a>
 <a href="https://icon.icepanel.io/AWS/svg/Compute/EC2.svg">
-  <img src="https://icon.icepanel.io/AWS/svg/Compute/EC2.svg" alt="EC2" width="100">
+  <img src="https://icon.icepanel.io/AWS/svg/Compute/EC2.svg" alt="EC2" width="80">
 </a>
+
 
 
 ### Project Overview
