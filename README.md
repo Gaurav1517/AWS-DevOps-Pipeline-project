@@ -81,7 +81,6 @@ Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-op
 
   To ensure the `bash` code does not appear as a block in the `README.md` file, simply remove the ```bash markers and keep the code as plain text. Here's how it should look:
 
-    ```
     #!/bin/bash
     # Update the system
     sudo yum update -y
@@ -97,7 +96,7 @@ Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-op
     systemctl enable codedeploy-agent
     # Check CodeDeploy agent status
     systemctl status codedeploy-agent
-    ```
+    
 
 
 ![ec2-snap](Snap/ec2-snap.png)
