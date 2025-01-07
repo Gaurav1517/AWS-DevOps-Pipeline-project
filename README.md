@@ -33,6 +33,24 @@ systemctl enable codedeploy-agent
 systemctl status codedeploy-agent
 ```
 
+#### ubuntu server agent install
+```bash
+#!/bin/bash
+sudo apt update -y
+sudo apt install ruby-full -y
+sudo apt install wget -y
+# Enter the following command:
+cd /home/ubuntu
+wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
+# Enter the following command:
+chmod +x ./install
+# To install the latest version of the CodeDeploy agent on any supported version of Ubuntu Server except 20.04:
+sudo ./install auto
+# tart the service and run the following two commands, one at a time:
+systemctl start codedeploy-agent
+systemctl status codedeploy-agent
+```
+
 ### Restart after attaching IAM Role
 ```bash
 systemctl restart  codedeploy-agent.service
