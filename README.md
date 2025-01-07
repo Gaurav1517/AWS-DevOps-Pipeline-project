@@ -11,6 +11,7 @@ cd AWS-DevOps-Pipeline-project/
 Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-linux.html
 
 ```bash
+#!/bin/bash
 # update the system
 sudo yum update
 # Install agent
