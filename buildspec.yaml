@@ -4,20 +4,19 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Install NGINX"
+      - echo "Install httpd (Apache HTTP Server)"
       - sudo yum update -y
-      - sudo yum install nginx -y
+      - sudo yum install httpd -y
   build:
     commands:
       - echo "Build started on $(date)"
-      - echo "Building the code"
-      - cp index.html /usr/share/nginx/html/index.html
+      - echo "Copying index.html to the web server directory"
+      - sudo cp index.html /var/www/html/index.html
   post_build:
     commands:
-      - echo "Starting NGINX without systemctl"
-      - sudo nginx -c /etc/nginx/nginx.conf  # Start NGINX manually
-      - sudo nginx -t  # Test the NGINX configuration
-      - sudo ps aux | grep nginx  # Confirm NGINX is running
+      - echo "Starting httpd without systemctl"
+      - sudo /usr/sbin/httpd -k start  # Start httpd manually
+      - sudo ps aux | grep httpd  # Confirm httpd is running
 
 artifacts:
   files:

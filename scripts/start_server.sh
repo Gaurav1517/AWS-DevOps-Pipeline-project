@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# Start and enable nginx service for YUM-based Linux
-service nginx start
-chkconfig nginx on
+# Start and enable httpd service for YUM-based Linux
+service httpd start
+chkconfig httpd on
