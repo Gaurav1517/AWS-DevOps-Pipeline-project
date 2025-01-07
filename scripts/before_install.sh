@@ -1,3 +1,4 @@
 #!/bin/bash
-yum update -y 
-yum install -y nginx 
+
+yum update -y
+yum install -y nginx

@@ -8,7 +8,7 @@ hooks:
     - location: scripts/stop_server.sh
       timeout: 300
       runas: root
-  BeforeInstall: 
+  BeforeInstall:
     - location: scripts/before_install.sh
       timeout: 300
       runas: root
@@ -23,3 +23,4 @@ hooks:
   ValidateService:
     - location: scripts/validate_service.sh
       timeout: 300
+      runas: root

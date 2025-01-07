@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# service start & enable ngnix for yum based linux
+# Start and enable nginx service for YUM-based Linux
 service nginx start
 chkconfig nginx on
-
